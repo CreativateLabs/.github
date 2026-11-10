@@ -33,18 +33,10 @@ evidence, mapped to public standards so others can apply and check them.
   evaluating AI systems that answer with evidence: graph correctness, ontology hygiene, answer
   groundedness and baseline comparison, plus a release gate that blocks on named checks instead of a
   weighted mean.
-<!-- After release, add:
 - **[governed-graph-growth](https://github.com/CreativateLabs/governed-graph-growth)** — a technical note on
   keeping a continuously ingested, provenance-first knowledge graph trustworthy as it grows: source
   authority tiers, identity before enrichment, rule-classed linking, schema re-validation and growth
-  health checks. DOI: 10.5281/zenodo.XXXXXXX
--->
-
-### Open source
-
-<!-- After release, list public repositories here (name — one line — licence). -->
-- **[IT-schule](https://github.com/CreativateLabs/IT-schule)** — CodePath, an interactive coding school as
-  a static site, live at [pycobase.com](https://pycobase.com).
+  health checks.
 
 ### Contact
 
