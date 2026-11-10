@@ -36,7 +36,7 @@ evidence, mapped to public standards so others can apply and check them.
 - **[governed-graph-growth](https://github.com/CreativateLabs/governed-graph-growth)** — a technical note on
   keeping a continuously ingested, provenance-first knowledge graph trustworthy as it grows: source
   authority tiers, identity before enrichment, rule-classed linking, schema re-validation and growth
-  health checks.
+  health checks. DOI [10.5281/zenodo.24099664](https://doi.org/10.5281/zenodo.24099664)
 
 ### Contact
 
