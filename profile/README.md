@@ -32,7 +32,7 @@ evidence, mapped to public standards so others can apply and check them.
 - **[grounded-ai-evals](https://github.com/adminleo/grounded-ai-evals)** — a four-layer method for
   evaluating AI systems that answer with evidence: graph correctness, ontology hygiene, answer
   groundedness and baseline comparison, plus a release gate that blocks on named checks instead of a
-  weighted mean.
+  weighted mean. DOI [10.5281/zenodo.24100702](https://doi.org/10.5281/zenodo.24100702)
 - **[governed-graph-growth](https://github.com/CreativateLabs/governed-graph-growth)** — a technical note on
   keeping a continuously ingested, provenance-first knowledge graph trustworthy as it grows: source
   authority tiers, identity before enrichment, rule-classed linking, schema re-validation and growth
