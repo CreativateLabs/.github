@@ -67,18 +67,22 @@ def svg(w, h, body, th):
             f'<rect width="{w}" height="{h}" fill="{th["canvas"]}"/>\n{body}\n</svg>\n')
 
 
-def banner(th):
-    W, H = 1200, 248
-    p = [wordmark(40, 44, 352, th["mark"])]
-    p.append(t(40, 150, "AI research and consultancy · makers of c:node · Frankfurt, Germany",
-               16, 500, "muted", th=th))
-    p.append(f'<line x1="40" y1="178" x2="{W-40}" y2="178" '
-             f'stroke="{th["border"]}" stroke-width="1"/>')
-    p.append(t(40, 212, "AI that has to justify its answers: a source for every "
-                        "statement, a record for every decision,", 17, 400, "fg", th=th))
-    p.append(t(40, 236, "and a person approving anything that leaves the system.",
-               17, 400, "fg", th=th))
-    return svg(W, H, "\n".join(p), th)
+def banner(_th=None):
+    """One dark card for both themes: the wordmark is only ever used in white."""
+    W, H = 1200, 252
+    GROUND, HAIR = "#0D0F1A", "#2A3047"
+    p = [f'<rect width="{W}" height="{H}" rx="8" fill="{GROUND}"/>',
+         wordmark(40, 46, 352, "#FFFFFF")]
+    p.append(t(40, 152, "AI research and consultancy · makers of c:node · Frankfurt, Germany",
+               16, 500, "#9AA3BD"))
+    p.append(f'<line x1="40" y1="180" x2="{W-40}" y2="180" '
+             f'stroke="{HAIR}" stroke-width="1"/>')
+    p.append(t(40, 214, "AI that has to justify its answers: a source for every "
+                        "statement, a record for every decision,", 17, 400, "#E8EDF5"))
+    p.append(t(40, 238, "and a person approving anything that leaves the system.",
+               17, 400, "#E8EDF5"))
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+            f'viewBox="0 0 {W} {H}" role="img">\n' + "\n".join(p) + "\n</svg>\n")
 
 
 def graph_panel(th):
@@ -147,13 +151,18 @@ def partners(_th=None):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    for name, fn in (("banner", banner), ("graph", graph_panel)):
+    for name, fn in (("graph", graph_panel),):
         for theme, th in THEMES.items():
             s = OUT / f"{name}-{theme}.svg"
             s.write_text(fn(th), encoding="utf-8")
             subprocess.run(["rsvg-convert", "-z", "2", str(s), "-o",
                             str(OUT / f"{name}-{theme}.png")], check=True)
             print("  ", s.stem)
+    sb = OUT / "banner.svg"
+    sb.write_text(banner(), encoding="utf-8")
+    subprocess.run(["rsvg-convert", "-z", "2", str(sb), "-o",
+                    str(OUT / "banner.png")], check=True)
+    print("   banner")
     sp = OUT / "partners.svg"
     sp.write_text(partners(), encoding="utf-8")
     subprocess.run(["rsvg-convert", "-z", "2", str(sp), "-o",
