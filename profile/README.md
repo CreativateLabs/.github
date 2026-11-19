@@ -61,7 +61,7 @@ flowchart LR
 | **99.9%+ of concepts anchored to an official source** | measured on the graph itself, before any question is asked |
 | **33 domains** | from finance and public administration to health and energy |
 
-Figures as of November 2026; live counts in the public observatory at **[graph.c-node.ai](https://graph.c-node.ai)**.
+Figures as of November 2026. Live counts in the observatory at **[graph.c-node.ai](https://graph.c-node.ai)**, and the method behind them in [governed-graph-growth](https://github.com/CreativateLabs/governed-graph-growth).
 
 ## Research
 
@@ -78,10 +78,10 @@ mapped to public standards so others can apply and check them.
 <p>
   <img alt="EU AI Act" src="https://img.shields.io/badge/EU%20AI%20Act-Art.%2010%2C%2012%2C%2014-0F172A?style=flat-square">
   <img alt="GDPR" src="https://img.shields.io/badge/GDPR-by%20design-0F172A?style=flat-square">
-  <img alt="ELI / CELEX / ECLI" src="https://img.shields.io/badge/identifiers-ELI%20·%20CELEX%20·%20ECLI%20·%20LEI-4B6EF5?style=flat-square">
-  <img alt="W3C" src="https://img.shields.io/badge/W3C-PROV--O%20·%20SHACL-4B6EF5?style=flat-square">
-  <img alt="Vocabularies" src="https://img.shields.io/badge/vocabularies-EuroVoc%20·%20NACE-4B6EF5?style=flat-square">
-  <img alt="Protocols" src="https://img.shields.io/badge/protocols-MCP%20·%20OIDC%20·%20OpenAPI-6B5BCD?style=flat-square">
+  <img alt="ELI / CELEX / ECLI" src="https://img.shields.io/badge/identifiers-ELI%20%C2%B7%20CELEX%20%C2%B7%20ECLI%20%C2%B7%20LEI-4B6EF5?style=flat-square">
+  <img alt="W3C" src="https://img.shields.io/badge/W3C-PROV--O%20%C2%B7%20SHACL-4B6EF5?style=flat-square">
+  <img alt="Vocabularies" src="https://img.shields.io/badge/vocabularies-EuroVoc%20%C2%B7%20NACE-4B6EF5?style=flat-square">
+  <img alt="Protocols" src="https://img.shields.io/badge/protocols-MCP%20%C2%B7%20OIDC%20%C2%B7%20OpenAPI-6B5BCD?style=flat-square">
 </p>
 
 ## Work with us
@@ -91,6 +91,7 @@ mapped to public standards so others can apply and check them.
 - **Research** — universities and research institutes working on grounded AI, legal knowledge graphs or human
   oversight of AI agents: we are open to joint work and co-authored publications.
 - **Contact** — [contact@creativate.tech](mailto:contact@creativate.tech) ·
-  [Leonardo Bornhäußer](https://github.com/adminleo), CTO
+  [Leonardo Bornhäußer](https://github.com/adminleo), CTO ·
+  [book 30 minutes](https://calendar.app.google/wKQLGVxpP1n67fZL6)
 
 <sub>Trust is good. Evidence is better.</sub>
