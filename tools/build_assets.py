@@ -98,6 +98,53 @@ def graph_panel(th):
     return svg(W, H, "\n".join(p), th)
 
 
+# The five marks we may actually show: the ministry and the research-allowance
+# seal because the certification grants them, the two regulations because they
+# are the law we build against, and the association because we are a member.
+# All five already appear on c-node.ai. Drawn on a light card deliberately:
+# four of them are black artwork on transparency and would vanish on a dark
+# page.
+LOGOS = [
+    ("bmftr.png", "Bundesministerium für Forschung, Technologie und Raumfahrt"),
+    ("bsfz-siegel.png", "BSFZ — research allowance certified"),
+    ("eu-ai-act.png", "EU AI Act"),
+    ("gdpr.png", "GDPR"),
+    ("ki-bundesverband.png", "KI Bundesverband member"),
+]
+
+
+def _png(path: pathlib.Path):
+    import base64, struct
+    raw = path.read_bytes()
+    w, h = struct.unpack(">II", raw[16:24])
+    return base64.b64encode(raw).decode(), w, h
+
+
+def partners(_th=None):
+    """One light card, because four of the five marks are black on transparent."""
+    W, H = 1200, 196
+    BOX_W, BOX_H = 196, 58
+    p = [f'<rect width="{W}" height="{H}" fill="#ffffff"/>',
+         f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" fill="none" '
+         f'stroke="#d1d9e0" stroke-width="1"/>']
+    p.append(t(32, 40, "Certified, bound and affiliated", 15, 600, "#1f2328"))
+    slot = (W - 64) / len(LOGOS)
+    for i, (fn, label) in enumerate(LOGOS):
+        data, iw, ih = _png(OUT / "logos" / fn)
+        scale = min(BOX_W / iw, BOX_H / ih)
+        w, h = iw * scale, ih * scale
+        cx = 32 + i * slot + slot / 2
+        p.append(f'<image x="{cx - w/2:.1f}" y="{92 - h/2:.1f}" width="{w:.1f}" '
+                 f'height="{h:.1f}" href="data:image/png;base64,{data}"/>')
+        p.append(t(cx, 150, label.split(" — ")[0].split(" für ")[0][:30], 11.5,
+                   400, "#59636e", anchor="middle"))
+    p.append(t(32, H - 18, "Research allowance under § 6 FZulG, certified by the BSFZ in 2026 "
+                           "· EU AI Act and GDPR are what we build against, not a certification",
+               11.5, 400, "#818b98"))
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+            f'viewBox="0 0 {W} {H}" role="img">\n' + "\n".join(p) + "\n</svg>\n")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for name, fn in (("banner", banner), ("graph", graph_panel)):
@@ -107,6 +154,11 @@ def main():
             subprocess.run(["rsvg-convert", "-z", "2", str(s), "-o",
                             str(OUT / f"{name}-{theme}.png")], check=True)
             print("  ", s.stem)
+    sp = OUT / "partners.svg"
+    sp.write_text(partners(), encoding="utf-8")
+    subprocess.run(["rsvg-convert", "-z", "2", str(sp), "-o",
+                    str(OUT / "partners.png")], check=True)
+    print("   partners")
 
 
 if __name__ == "__main__":

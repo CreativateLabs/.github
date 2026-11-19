@@ -92,11 +92,11 @@ with evidence, mapped to public standards so others can apply and check them.
 | **[grounded-ai-evals](https://github.com/adminleo/grounded-ai-evals)** | A four-layer method for evaluating AI systems that answer with evidence — graph correctness, ontology hygiene, answer groundedness, baseline comparison — plus a release gate that blocks on named checks instead of a weighted mean. | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24100702.svg)](https://doi.org/10.5281/zenodo.24100702) |
 | **[governed-graph-growth](https://github.com/CreativateLabs/governed-graph-growth)** | A technical note on keeping a continuously ingested, provenance-first knowledge graph trustworthy as it grows: source authority tiers, identity before enrichment, rule-classed linking, schema re-validation, growth health signals. | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24099664.svg)](https://doi.org/10.5281/zenodo.24099664) |
 
-![BSFZ](https://img.shields.io/badge/R%26D%20certified-BSFZ%202026%20%C2%B7%20%C2%A7%206%20FZulG-1a7f37?style=flat-square)
+<img alt="Bundesministerium für Forschung, Technologie und Raumfahrt · BSFZ research allowance certified 2026 · EU AI Act · GDPR · member of the KI Bundesverband" src="assets/partners.png">
+
 ![EU-CORNET](https://img.shields.io/badge/consortium-EU--CORNET-4B6EF5?style=flat-square)
 ![Fraunhofer IVI](https://img.shields.io/badge/research%20partner-Fraunhofer%20IVI-4B6EF5?style=flat-square)
 ![MEF University](https://img.shields.io/badge/research%20partner-MEF%20University-4B6EF5?style=flat-square)
-[![KI Bundesverband](https://img.shields.io/badge/member-KI%20Bundesverband-6B5BCD?style=flat-square)](https://ki-verband.de)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--6464--5179-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0005-6464-5179)
 
 ## Work with us
