@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-  <img alt="Creativate — AI research and consultancy, makers of c:node, Frankfurt. AI that has to justify its answers: a source for every statement, a record for every decision, and a person approving anything that leaves the system." src="assets/banner-light.png">
-</picture>
+<img alt="Creativate — AI research and consultancy, makers of c:node, Frankfurt. AI that has to justify its answers: a source for every statement, a record for every decision, and a person approving anything that leaves the system." src="assets/banner.png">
 
 [![c:node](https://img.shields.io/badge/product-c--node.ai-6B5BCD?style=flat-square)](https://c-node.ai)
 [![Try c:node](https://img.shields.io/badge/try-try.c--node.ai-6B5BCD?style=flat-square)](https://try.c-node.ai)
@@ -98,6 +95,32 @@ with evidence, mapped to public standards so others can apply and check them.
 ![Fraunhofer IVI](https://img.shields.io/badge/research%20partner-Fraunhofer%20IVI-4B6EF5?style=flat-square)
 ![MEF University](https://img.shields.io/badge/research%20partner-MEF%20University-4B6EF5?style=flat-square)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0005--6464--5179-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0005-6464-5179)
+
+## How we work, and who we bring
+
+Requirements, acceptance and escalation sit in Germany. Delivery runs through an
+international, multilingual team, which is how a mid-sized budget buys senior
+people rather than a smaller number of them.
+
+A ticket is the specification and carries its acceptance criteria. Agents
+implement with access to the repository, the database and the APIs; people
+review and test; a confirmation gate stands before anything irreversible.
+Architecture decisions are written down with the option that was rejected and
+why — a team's memory is what survives the people who were in the room. Scrum
+or Kanban, with refinement before planning rather than inside it.
+
+| Role we staff | What that means here |
+|---|---|
+| **Data science and machine learning** | M.Sc. level. Modelling, evaluation design, and the discipline of asking what a metric is actually measuring before anyone reports it. Our published evaluation method came out of this work. |
+| **AI engineering** | Agentic systems, knowledge graphs, retrieval that has to cite, document automation, and the grounding and provenance layer underneath all of it. |
+| **Enterprise architecture** | Services with one job each, integration into landscapes that already exist, identity and billing as their own systems, cloud or on-premises down to air-gapped. |
+| **Technical product ownership** | The interface between business and engineering: requirements, prioritisation, architecture decisions, stakeholder and committee work in regulated settings, and the release gate. |
+| **UX/UI and product design** | Research, flows and design systems — the interface people actually have to use, not the one that demos well. |
+| **Full-stack engineering** | React, TypeScript and Node at the front, Python and FastAPI behind it, Java and Spring Boot where the existing landscape requires it. |
+| **Cloud and operations** | AWS, Google Cloud, Hetzner and on-premises with local GPU inference. CI/CD, and the running of it afterwards. |
+
+Teams are put together per engagement, from one specialist alongside your
+people to a delivery unit that owns a product end to end.
 
 ## Work with us
 
