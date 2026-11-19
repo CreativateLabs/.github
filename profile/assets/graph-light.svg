@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="318" viewBox="0 0 1200 318" role="img">
+<rect width="1200" height="318" fill="#ffffff"/>
+<text x="40" y="44" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="20" font-weight="600" fill="#1f2328">The c:node Graph</text>
+<text x="40" y="68" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e">one continuously ingested knowledge graph · figures as of November 2026</text>
+<line x1="40" y1="86" x2="379" y2="86" stroke="#d1d9e0" stroke-width="1"/>
+<text x="40" y="118" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#1f2328">52,000+</text>
+<text x="40" y="142" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#59636e">concepts</text>
+<text x="40" y="164" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#818b98">EU and German law down to the article, case law, ontologies</text>
+<line x1="413" y1="86" x2="752" y2="86" stroke="#d1d9e0" stroke-width="1"/>
+<text x="413" y="118" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#1f2328">106,000+</text>
+<text x="413" y="142" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#59636e">typed relations</text>
+<text x="413" y="164" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#818b98">between norms, authorities, companies and markets</text>
+<line x1="786" y1="86" x2="1125" y2="86" stroke="#d1d9e0" stroke-width="1"/>
+<text x="786" y="118" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#1f2328">33</text>
+<text x="786" y="142" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#59636e">domains</text>
+<text x="786" y="164" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#818b98">finance, public administration, health, energy and more</text>
+<line x1="40" y1="190" x2="379" y2="190" stroke="#d1d9e0" stroke-width="1"/>
+<text x="40" y="222" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#1f2328">3.1 million+</text>
+<text x="40" y="246" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#59636e">company records</text>
+<text x="40" y="268" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#818b98">from public registers, refreshed by a daily ingest</text>
+<line x1="413" y1="190" x2="752" y2="190" stroke="#d1d9e0" stroke-width="1"/>
+<text x="413" y="222" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#1f2328">51,000+</text>
+<text x="413" y="246" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#59636e">public tenders</text>
+<text x="413" y="268" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#818b98">procurement notices linked to the authorities issuing them</text>
+<line x1="786" y1="190" x2="1125" y2="190" stroke="#d1d9e0" stroke-width="1"/>
+<text x="786" y="222" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#1f2328">99.9%+</text>
+<text x="786" y="246" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#59636e">anchored to a source</text>
+<text x="786" y="268" font-family="Helvetica Neue, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#818b98">measured on the graph itself, before any question</text>
+</svg>
